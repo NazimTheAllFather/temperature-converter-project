@@ -85,14 +85,7 @@ def string_to_real(valid_number_string):
         
         #returns valid_number_string as a valid real_number of float type
         return return_real_number 
-def is_valid_temp_scale(temprature_scale):
-    #creating a list of 8 acceptable temperate scales
-    valid_temps = ['fahrenheit', 'celsius', 'kelvin', 'rankine', 'delisle', 'newton', 'roaumur', 'romer']
 
-    if temprature_scale.lower() in valid_temps:
-        pass
-    else:
-        pass
 def get_temp_scale(input_or_target):
     #Accepting temprature scale and validating it 
     temp_scale = ''
