@@ -1,5 +1,5 @@
 import math
-#FIXME: can we combine is_valid_Temp_scale and to_inter_temp_scale? 
+
 def is_real_number(user_input):  
     leading_sign = ''
     decimal_point_index = -1
