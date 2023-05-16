@@ -1,5 +1,3 @@
-import math
-
 def is_real_number(user_input):  
     leading_sign = ''
     decimal_point_index = -1
@@ -85,12 +83,11 @@ def string_to_real(valid_number_string):
         
         #returns valid_number_string as a valid real_number of float type
         return return_real_number 
-
 def get_temp_scale(input_or_target):
-    #Accepting temprature scale and validating it 
     temp_scale = ''
     valid_temps = ['fahrenheit', 'celsius', 'kelvin', 'rankine', 'delisle', 'newton', 'roaumur', 'romer']
 
+    #Accepting temprature scale and validating it 
     while True:
         print('\n----\t', end= '')
         print('Fahrenheit, Celsius, Kelvin, Rankine, Delisle, Newton, Roaumur, or Romer', end= ' ')
@@ -107,21 +104,21 @@ def to_inter_temp_scale(temprature, temprature_scale):
     # if-elif statments that take in temprature and based on the scale convert it to the selected intermediate scale (Celsius)
     celsius_scale = 0
     if temprature_scale.lower() == 'fahrenheit':
-        celsius_scale = (temprature - 32) / (9.0/5.0)
+        celsius_scale = (temprature - 32) / (9.0 / 5.0)
     elif temprature_scale.lower() == 'celsius':
         celsius_scale = temprature
     elif temprature_scale.lower() == 'kelvin':
         celsius_scale = temprature - 273.15
     elif temprature_scale.lower() == 'rankine':
-        celsius_scale = (temprature - 491.67) * 5.0/9.0
+        celsius_scale = (temprature - 491.67) * (5.0 / 9.0)
     elif temprature_scale.lower() == 'delisle':
-        celsius_scale = 100 - (temprature * 2.0/3.0)
+        celsius_scale = 100 - (temprature * (2.0 / 3.0))
     elif temprature_scale.lower() == 'newton':
-        celsius_scale = temprature * 100.0/33.0
+        celsius_scale = temprature * 100.0 / 33.0
     elif temprature_scale.lower() == 'roaumur':
-        celsius_scale = temprature * 5.0/4.0
+        celsius_scale = temprature * 5.0 / 4.0
     elif temprature_scale.lower() == 'romer':
-        celsius_scale = (temprature - 7.5) * 40.0/21.0
+        celsius_scale = (temprature - 7.5) * 40.0 / 21.0
 
     return celsius_scale
 def to_target_temp_scale(temprature, temprature_scale):
@@ -210,5 +207,5 @@ while True:
     else:
         break
 
-print('\nGoodbye!')
+print('\nThank you!')
         
